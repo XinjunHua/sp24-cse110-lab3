@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Meeting Note #1</title>
+    <link rel="icon" sizes="16x16" type="image/png" href="cat.png"> 
+  </head>
+
+  <body>
+    <div>
+    <header>
+      <h1>Team A's First Brainstorming</h1>
+    </header>
+    </div>
+
+    <div>
+      <main>
+        <section>
+        <h2>Basic Info</h2>
+        <h3>Date: Apr 13, 2024</h3>
+        <h3>Members</h3>
+        <nav>
+          <ul>
+            <li><span style="color:blue">Attendents: Wilson John, Josef Lee</span></li>
+            <li><span style="color:Red">Absences: Norman Li</span></li>
+          </ul>
+        </nav>
+        <h3>Agenda of the meeting</h3>
+        <p>We plan to cover the group setup stuff and come up with a basic idea 
+          about the group project by brainstorming.</p>
+        </section>
+        <hr>
+
+        <section>
+        <h2>Progress and Outcome</h2>
+        <h3>Unfinied businesses from last meeting</h3>
+          <p><em>Group rules</em>,<br />leader election.</p>
+        <h3>New businesses added</h3>
+        <p>Pick up a theme for the product,<br />define the intended customers.</p>
+        <h3>Overall takeaway</h3>
+        <h4>Group rules</h4>
+        <p>no eating and sleeping in meetings; everyone should at 
+          least work 2 hours a day for the project; check group mate's emails 
+          every 5 hours.</p>
+        <h4>Group Icon</h4>
+        <p>The group icon we selected is the following:
+          <img src="cat.png">
+        </p>
+        <h4>Video Recording</h4>
+        <p>Check the following video from the meeting:
+          <video controls width="250">
+            <source src="meeting_video.MOV">
+          </video>
+        </p>
+        <h4>Audio Recording</h4>
+        <p>Check the following video from the meeting:
+          <figure>
+            <figcaption>Listen to the meeting audio:</figcaption>
+            <audio controls src="meeting_audio.m4a"></audio>
+          </figure>
+          </p>
+        </section>
+        <hr>
+
+        <section>
+        <h2>Documentation</h2>
+        <h3>Comments</h3>
+        <nav>
+        <ol>
+          <li>Wilson John suggests that we should use <a href="
+            https://slack.com"> <b>slack</b> </a>to <strong>
+            keep track</strong> of our work.</li>
+        </ol>
+        </nav>
+        <h3>Questions</h3>
+        <p>Josef Lee asks about the <i>code style</i>.</p>
+        </section>
+
+        <details>
+          <summary>Details</summary>
+          It's important to keep a uniform code style.
+        </details>
+        <hr>
+
+      </main>
+    </div>
+
+    <section>
+    <h2>Feedback</h2>
+    <form>
+      <fieldset>
+          <legend>Feedback Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="rating">Rating of meeting notes:</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+          <label for="preferred-contact">Preferred Contact Method:</label>
+          <select id="preferred-contact" name="preferred-contact">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="mail">Mail</option>
+          </select><br><br>
+          <label for="age">Choose you age below:</label>
+<input list="ages" id="ages" name="ages" />
+
+<datalist id="ages">
+  <option value="under 16"></option>
+  <option value="16-25"></option>
+  <option value="26-35"></option>
+  <option value="36-45"></option>
+  <option value="above 45"></option>
+</datalist>
+
+          <button type="submit">Submit Feedback</button>
+      </fieldset>
+  </form>
+
+    </section>
+
+    <div>
+      <footer>
+      <p>Author: Xinjun Hua</p> 
+      </footer>
+    </div>
+  </body>
+
+</html>
