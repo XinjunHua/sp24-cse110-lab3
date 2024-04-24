@@ -1,0 +1,154 @@
+  body {
+    background-color: lightblue;
+    font-size: 16px;
+    font: Arial, Lato;
+    
+  }
+
+  /* want a light to dark effect for headers */
+  
+  h1 {
+    /* use a light blue color for header 1*/
+    color: rgb(64, 64, 255);
+    margin-left: 20px;
+    font-size: 0.6cm;
+    margin: auto;
+
+    text-decoration: underline; /* Underline the text */
+    position:static;
+
+
+  }
+
+  h2 {
+    color: #0000FF;
+    margin-left: 20px;
+    font-size: 50mm;
+    margin: 10px 20px;
+    text-decoration: underline; /* Underline the text */
+    text-align: center; /* Align the text to the center */
+  }
+
+  h3 {
+    color: hsl(240, 75%, 36%);
+    font-size: 1.1rem;
+    text-decoration: underline; /* Underline the text */
+    text-align: center; /* Align the text to the center */
+  }
+
+  h4 {
+    color: color-mix(in lch, navy, pink 10%);
+    text-decoration: underline; /* Underline the text */
+    text-align: center; /* Align the text to the center */
+    
+  }
+  
+  /* Define font family with fallback for paragraphs */
+  p {
+    font-family: Arial, sans-serif;
+      margin-top: 10px; /* Set margin top to 10 pixels */
+      margin-right: 20px; /* Set margin right to 20 pixels */
+      margin-bottom: 10px; /* Set margin bottom to 10 pixels */
+      margin-left: 20px; /* Set margin left to 20 pixels */
+
+  }
+
+  div{
+    padding-top: 10px; /* Set padding top to 10 pixels */
+    padding-right: 20px; /* Set padding right to 20 pixels */
+    padding-bottom: 10px; /* Set padding bottom to 10 pixels */
+    padding-left: 20px; /* Set padding left to 20 pixels */
+
+    /* Borders */
+  border-style: solid; /* Set border style to solid */
+  border-color: #000; /* Set border color to black */
+  border-width: 1px; /* Set border width to 1 pixel */
+  border-radius: 5px; /* Set border radius to 5 pixels */
+  position: static;
+}
+
+  button {
+    padding: 10px 20px;
+    height: 100px; /* Set the height of the element to 100 pixels */
+    width: 200px; /* Set the width of the element to 200 pixels */
+    max-width: 300px; /* Set the maximum width of the element to 300 pixels */
+    min-width: 150px; /* Set the minimum width of the element to 150 pixels */
+  }
+
+  button:hover {
+    color: blue;
+  }
+
+  button:active {
+    color:green;
+  }
+
+  ul {
+    display: grid;
+
+  }
+
+  span {
+    display: flex;
+  }
+
+  /* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Attribute Selector */
+a[href="https://slack.com"] {
+  color: red;
+}
+
+/* class selector*/
+.important{
+  color: red;
+}
+
+/* Selector List */
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+/* Combinators */
+/* Descendant Combinator */
+div p {
+  color: black;
+}
+
+/* Child Combinator */
+ul > li {
+  font-style: italic;
+}
+
+/* General sibling combinator */
+h1 ~ p {
+  font-size: 18px;
+}
+
+/* Adjacent sibling combinator */
+h2 + p {
+  color: orange;
+}
+
+/* Combining Two Selectors */
+p.important {
+  font-weight: bold;
+}
+
+/* New Selectors */
+/* :has() */
+h3:has(p) {
+  background-color: lightgray;
+}
+
+/* Nested Selectors */
+.important {
+  &:hover {
+    color: green;
+  }
+}
+
