@@ -1,7 +1,7 @@
   body {
     background-color: lightblue;
     font-size: 16px;
-    font: Arial, Lato;
+    font-family: Arial, Helvetica;
     
   }
 
@@ -23,7 +23,7 @@
   h2 {
     color: #0000FF;
     margin-left: 20px;
-    font-size: 50mm;
+    font-size: 5mm;
     margin: 10px 20px;
     text-decoration: underline; /* Underline the text */
     text-align: center; /* Align the text to the center */
@@ -37,7 +37,7 @@
   }
 
   h4 {
-    color: color-mix(in lch, navy, pink 10%);
+    color: color-mix(hsla(240, 75%, 3%, 0.813), rgb(64,64,255));
     text-decoration: underline; /* Underline the text */
     text-align: center; /* Align the text to the center */
     
@@ -50,6 +50,10 @@
       margin-right: 20px; /* Set margin right to 20 pixels */
       margin-bottom: 10px; /* Set margin bottom to 10 pixels */
       margin-left: 20px; /* Set margin left to 20 pixels */
+
+      :hover{
+        color: green;
+      }
 
   }
 
@@ -146,9 +150,5 @@ h3:has(p) {
 }
 
 /* Nested Selectors */
-.important {
-  &:hover {
-    color: green;
-  }
-}
+
 
